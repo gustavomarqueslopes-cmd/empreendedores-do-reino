@@ -24,7 +24,7 @@ export default function Home() {
           <a href="#impacto" className="transition-colors hover:text-foreground">Nosso impacto</a>
           <a href="#visao" className="transition-colors hover:text-foreground">Visão</a>
         </nav>
-        <Button className="h-10 rounded-full px-5" render={<a href="#cadastro" />}>Fazer parte <ArrowRight data-icon="inline-end" /></Button>
+        <Button nativeButton={false} className="h-10 rounded-full px-5" render={<a href="#cadastro" />}>Fazer parte <ArrowRight data-icon="inline-end" /></Button>
       </header>
 
       <section id="inicio" className="relative z-10 mx-auto grid min-h-[670px] max-w-7xl items-center gap-12 px-5 pb-20 pt-12 sm:px-8 lg:grid-cols-[1.08fr_.92fr] lg:pt-20">
@@ -33,8 +33,8 @@ export default function Home() {
           <h1 className="font-heading text-[clamp(3.3rem,8vw,7.2rem)] font-semibold leading-[.86] tracking-[-.065em]">Negócios com<span className="block font-serif font-normal italic text-primary">propósito.</span>Impacto real.</h1>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">Conectamos empreendedores que transformam empresas, cidades e pessoas — compartilhando oportunidades, conhecimento e valores que permanecem.</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Button className="h-13 rounded-full px-7 text-base" render={<a href="#cadastro" />}>Quero fazer parte da rede <ArrowRight data-icon="inline-end" /></Button>
-            <Button variant="outline" className="h-13 rounded-full border-primary/20 bg-white/50 px-7 text-base" render={<a href="#movimento" />}>Conheça o movimento</Button>
+            <Button nativeButton={false} className="h-13 rounded-full px-7 text-base" render={<a href="#cadastro" />}>Quero fazer parte da rede <ArrowRight data-icon="inline-end" /></Button>
+            <Button nativeButton={false} variant="outline" className="h-13 rounded-full border-primary/20 bg-white/50 px-7 text-base" render={<a href="#movimento" />}>Conheça o movimento</Button>
           </div>
         </div>
 
