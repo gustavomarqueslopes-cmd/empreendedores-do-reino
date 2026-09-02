@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Empreendedores do Reino</title>
+  <desc id="desc">Monograma geométrico ER com eixo dourado e estrutura azul-ciano</desc>
+  <path fill="#F5B85B" d="M12 18a6 6 0 0 1 6-6h9v72h-9a6 6 0 0 1-6-6V18Z"/>
+  <path fill="#42D6FF" d="M24 12h33c13.255 0 24 10.745 24 24S70.255 60 57 60H24V48h33c6.627 0 12-5.373 12-12s-5.373-12-12-12H24V12Z"/>
+  <rect width="34" height="12" x="24" y="36" fill="#42D6FF" rx="4"/>
+  <rect width="34" height="12" x="24" y="72" fill="#42D6FF" rx="4"/>
+  <path fill="#42D6FF" d="M48 56h15l21 28H68L48 56Z"/>
+</svg>

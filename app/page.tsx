@@ -1,57 +1,68 @@
-import { ArrowRight, Bot, BrainCircuit, CheckCircle2, Cpu, Network, ScanSearch, Sparkles, Zap } from 'lucide-react';
-
-import { Button } from '@/components/ui/button';
+import { ArrowRight, CheckCircle2, Globe2, GraduationCap } from 'lucide-react';
+import { AiHero } from '@/components/ai-hero';
+import { FutureIntelligence } from '@/components/future-intelligence';
+import { ImpactCases } from '@/components/impact-cases';
+import { MissionEngine } from '@/components/mission-engine';
 import { PlatformSections } from '@/components/platform-sections';
+import { AiEraShowcase } from '@/components/ai-era-showcase';
+import { ConversionRail } from '@/components/conversion-rail';
+import { Button } from '@/components/ui/button';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
-const outcomes = [
-  ['Conexões estratégicas', 'Encontre clientes, parceiros, fornecedores e mentores em todo o Brasil.'],
-  ['Inteligência de mercado', 'Descubra tendências, desafios e oportunidades a partir dos dados da própria rede.'],
-  ['IA aplicada ao negócio', 'Avance da curiosidade para automações e decisões que aumentam produtividade.'],
+const faqs = [
+  ['O que é a Rede Empreendedores do Reino?', 'É um ecossistema nacional de empreendedores cristãos criado para conectar propósito, formação, tecnologia, oportunidades e pessoas capazes de gerar impacto.'],
+  ['Preciso pagar para me cadastrar?', 'Não. O cadastro inicial é gratuito e serve para mapear seu perfil, entender suas necessidades e organizar as primeiras conexões da rede.'],
+  ['Preciso já utilizar inteligência artificial?', 'Não. A rede atende desde quem ainda não sabe por onde começar até empresas que já usam automações e IA em seus processos ou produtos.'],
+  ['O que acontece depois do cadastro?', 'Seu perfil passa a compor o mapa do ecossistema. Com o crescimento da rede, você poderá receber convites para encontros, conteúdos, especialistas e conexões alinhadas ao seu momento.'],
+  ['Meus dados ficarão públicos?', 'Não. O painel utiliza apenas indicadores agregados. Informações de contato e dados individuais não são exibidos publicamente.'],
 ];
 
 export default function Home() {
-  return (
-    <main className="min-h-screen overflow-hidden bg-[#050a12] text-white">
-      <header className="absolute inset-x-0 top-0 z-30 mx-auto flex max-w-[1440px] items-center justify-between px-5 py-6 sm:px-10">
-        <a href="#inicio" aria-label="Início" className="flex items-center gap-3">
-          <span className="grid size-11 place-items-center rounded-xl border border-cyan-300/30 bg-cyan-300/10 text-cyan-300 shadow-[0_0_24px_rgba(34,211,238,.16)]"><Network className="size-5" /></span>
-          <span><strong className="block text-sm tracking-[.14em]">EMPREENDEDORES</strong><span className="block text-[10px] font-semibold tracking-[.34em] text-cyan-300">DO REINO</span></span>
-        </a>
-        <nav className="hidden items-center gap-8 text-sm text-slate-400 md:flex"><a href="#porque" className="hover:text-white">Por que participar</a><a href="#inteligencia" className="hover:text-white">Ecossistema</a><a href="#cadastro" className="hover:text-white">Cadastro</a></nav>
-        <Button nativeButton={false} render={<a href="#cadastro" />} className="h-10 rounded-xl bg-cyan-300 px-5 text-[#041018] shadow-[0_0_28px_rgba(34,211,238,.2)] hover:bg-cyan-200">Entrar na rede <ArrowRight /></Button>
-      </header>
+  return <main className="min-h-screen overflow-x-hidden bg-[#f2f0e9] pb-20 text-[#132e35] sm:pb-24">
+    <AiHero />
 
-      <section id="inicio" className="relative isolate min-h-[820px] overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_70%_30%,rgba(21,117,143,.34),transparent_26%),radial-gradient(circle_at_45%_65%,rgba(82,45,145,.23),transparent_36%),linear-gradient(135deg,#050a12_0%,#071827_55%,#050a12_100%)]" />
-        <div className="tech-grid absolute inset-0 -z-10 opacity-40" />
-        <div className="absolute left-[72%] top-[23%] -z-10 size-80 -translate-x-1/2 rounded-full border border-cyan-300/15 shadow-[0_0_120px_rgba(34,211,238,.16),inset_0_0_70px_rgba(34,211,238,.08)]" />
-        <div className="absolute left-[72%] top-[23%] -z-10 size-52 -translate-x-1/2 rounded-full border border-violet-400/20" />
-        <div className="mx-auto grid min-h-[820px] max-w-[1440px] items-center gap-14 px-5 pb-20 pt-32 sm:px-10 lg:grid-cols-[1.06fr_.94fr]">
-          <div className="max-w-3xl">
-            <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/5 px-4 py-2 text-xs font-semibold uppercase tracking-[.18em] text-cyan-200"><Sparkles className="size-4" /> A nova geração de empreendedores começa aqui</div>
-            <h1 className="text-[clamp(3.4rem,7vw,7.4rem)] font-semibold leading-[.88] tracking-[-.07em]">Conecte seu negócio ao <span className="ai-gradient block">futuro com IA.</span></h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">Uma rede nacional para empresários que querem crescer, aplicar inteligência artificial e construir negócios capazes de transformar mercados, cidades e pessoas.</p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row"><Button nativeButton={false} render={<a href="#cadastro" />} className="h-14 rounded-xl bg-cyan-300 px-7 text-base text-[#031016] shadow-[0_0_34px_rgba(34,211,238,.22)] hover:bg-cyan-200">Quero fazer parte <ArrowRight /></Button><Button nativeButton={false} render={<a href="#porque" />} variant="outline" className="h-14 rounded-xl border-white/15 bg-white/5 px-7 text-base text-white hover:bg-white/10">Entenda a proposta</Button></div>
-            <div className="mt-9 flex flex-wrap gap-x-7 gap-y-3 text-sm text-slate-400">{['Cadastro gratuito','Leva menos de 3 minutos','Presença nacional'].map(item=><span key={item} className="flex items-center gap-2"><CheckCircle2 className="size-4 text-cyan-300" />{item}</span>)}</div>
-          </div>
+    <section className="relative z-20 -mt-1 bg-white px-5 py-7 sm:px-10 lg:px-16"><div className="mx-auto grid max-w-[1312px] gap-px overflow-hidden rounded-2xl border border-[#d8e4e6] bg-[#d8e4e6] sm:grid-cols-2 lg:grid-cols-4">{[['01','Entenda seu momento'],['02','Aprenda a usar IA'],['03','Encontre conexões'],['04','Transforme em execução']].map(([n,t])=><div key={n} className="bg-[#f8fbfc] p-5"><span className="text-xs font-bold text-[#0c809a]">{n}</span><p className="mt-2 font-semibold text-[#183942]">{t}</p></div>)}</div></section>
 
-          <div className="relative mx-auto w-full max-w-[570px]">
-            <div className="absolute inset-0 rounded-[2rem] bg-cyan-400/10 blur-3xl" />
-            <div className="relative rounded-[2rem] border border-white/12 bg-[#07131f]/88 p-5 shadow-[0_35px_100px_rgba(0,0,0,.5)] backdrop-blur-xl sm:p-7">
-              <div className="flex items-center justify-between border-b border-white/10 pb-5"><div><span className="text-xs uppercase tracking-[.2em] text-cyan-300">Mapa de oportunidades</span><h2 className="mt-1 text-xl font-semibold">Inteligência da Rede</h2></div><span className="flex items-center gap-2 rounded-full bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300"><span className="size-1.5 rounded-full bg-emerald-300" /> Ao vivo</span></div>
-              <div className="mt-5 grid grid-cols-3 gap-3">{[['327','membros'],['18','estados'],['42','setores']].map(([value,label])=><div key={label} className="rounded-xl border border-white/8 bg-white/[.035] p-4"><strong className="block text-2xl text-white">{value}</strong><span className="text-xs text-slate-500">{label}</span></div>)}</div>
-              <div className="mt-4 rounded-2xl border border-white/8 bg-white/[.025] p-5"><div className="flex items-center justify-between"><span className="text-sm text-slate-300">O que empresários mais buscam</span><BrainCircuit className="size-5 text-violet-300" /></div><div className="mt-5 space-y-4">{[['Aplicar IA','74%'],['Gerar novos negócios','61%'],['Conexões estratégicas','48%']].map(([label,value],i)=><div key={label}><div className="mb-2 flex justify-between text-xs"><span className="text-slate-400">{label}</span><span className="text-white">{value}</span></div><div className="h-1.5 overflow-hidden rounded-full bg-white/8"><div className={`h-full rounded-full ${i===1?'bg-violet-400':'bg-cyan-300'}`} style={{width:value}} /></div></div>)}</div></div>
-              <div className="mt-4 flex items-center gap-4 rounded-2xl border border-cyan-300/15 bg-cyan-300/[.06] p-4"><span className="grid size-11 place-items-center rounded-xl bg-cyan-300/10 text-cyan-300"><Bot /></span><div><strong className="block text-sm">Diagnóstico inteligente</strong><span className="text-xs text-slate-400">Sua jornada começa pelo seu momento atual.</span></div></div>
-            </div>
+    <section id="origem" className="px-5 py-24 sm:px-10 lg:px-16 lg:py-32">
+      <div className="mx-auto grid max-w-[1312px] gap-14 lg:grid-cols-[.86fr_1.14fr] lg:items-center">
+        <div>
+          <span className="text-xs font-bold uppercase tracking-[.22em] text-[#9a6427]">O que é este movimento</span>
+          <h2 className="mt-5 text-4xl font-medium leading-[1.02] tracking-[-.045em] sm:text-6xl">Propósito que vira negócio. Negócios que transformam cidades.</h2>
+          <div className="mt-8 space-y-5 text-lg leading-8 text-[#5b6e72]">
+            <p>A Rede Empreendedores do Reino nasce conectada à visão do MissioEmpreendedor: líderes cristãos chamados a resolver problemas humanos reais, construir negócios sustentáveis e gerar impacto mensurável.</p>
+            <p>Ela aproxima empreendedores, universidades, igrejas, investidores, tecnologia, governo, comunidades, mentores e mercados — porque nenhuma transformação relevante acontece de forma isolada.</p>
           </div>
+          <div className="mt-9 border-l-2 border-[#d29a55] pl-6"><p className="font-serif text-2xl leading-9 text-[#243f45]">Não começa apenas com uma ideia. Começa com um chamado, encontra um problema humano e transforma visão em execução.</p></div>
         </div>
-      </section>
+        <div className="relative"><img src="/event-photo.png" alt="Empresários brasileiros criando conexões durante um encontro" className="aspect-[3/2] w-full rounded-[2rem] object-cover shadow-[0_30px_80px_rgba(22,54,60,.18)]" /><div className="absolute -bottom-7 left-6 right-6 rounded-2xl bg-[#123b43] p-5 text-white shadow-xl sm:left-10 sm:right-auto sm:max-w-sm"><span className="text-xs uppercase tracking-[.18em] text-[#f0c586]">A visão</span><p className="mt-2 text-lg leading-7">Uma rede brasileira conectada a oportunidades globais.</p></div></div>
+      </div>
+    </section>
 
-      <section id="porque" className="bg-[#07111c] px-5 py-24 sm:px-10"><div className="mx-auto max-w-7xl"><div className="max-w-3xl"><span className="text-sm font-semibold uppercase tracking-[.2em] text-cyan-300">Mais que networking</span><h2 className="mt-5 text-4xl font-semibold tracking-tight sm:text-6xl">Entre para uma rede que transforma dados em conexões e conexões em crescimento.</h2></div><div className="mt-14 grid gap-4 md:grid-cols-3">{outcomes.map(([title,copy],i)=>{const Icon=[Network,ScanSearch,Cpu][i];return <article key={title} className="group rounded-2xl border border-white/10 bg-white/[.035] p-7 transition hover:-translate-y-1 hover:border-cyan-300/25 hover:bg-white/[.05]"><Icon className="size-7 text-cyan-300"/><span className="mt-10 block text-xs font-semibold tracking-[.2em] text-slate-500">0{i+1}</span><h3 className="mt-3 text-xl font-semibold">{title}</h3><p className="mt-3 leading-7 text-slate-400">{copy}</p></article>})}</div></div></section>
+    <section id="dr-dan" className="overflow-hidden bg-white px-5 py-24 sm:px-10 lg:px-16 lg:py-32">
+      <div className="mx-auto grid max-w-[1312px] gap-14 lg:grid-cols-[.82fr_1.18fr] lg:items-center">
+        <div className="relative mx-auto w-full max-w-[580px] lg:mx-0"><div className="absolute -left-6 -top-6 size-36 border-l border-t border-[#d8a765]" /><img src="/dr-dan-sandoval.png" alt="Retrato do Dr. Dan Sandoval" className="relative aspect-[4/5] w-full object-cover object-top shadow-[0_35px_90px_rgba(20,55,60,.2)]" /><div className="absolute -bottom-7 right-[-10px] max-w-xs bg-[#123b43] p-6 text-white shadow-2xl sm:right-[-28px]"><span className="text-xs font-bold uppercase tracking-[.18em] text-[#f0bd78]">Pesquisa atual</span><p className="mt-2 text-lg leading-7">Empreendedorismo de impacto na era da inteligência artificial.</p></div></div>
+        <div className="pt-8 lg:pl-10 lg:pt-0"><span className="text-xs font-bold uppercase tracking-[.22em] text-[#9a6427]">A liderança por trás da visão</span><h2 className="mt-5 text-4xl font-medium leading-[1.02] tracking-[-.045em] sm:text-6xl">Dr. Dan Sandoval</h2><p className="mt-5 text-xl leading-8 text-[#365158]">Estrategista de liderança global, empreendedor, executivo e educador filipino-americano.</p><p className="mt-6 text-lg leading-8 text-[#647679]">Há mais de três décadas, sua trajetória conecta desenvolvimento de líderes, expansão internacional, inovação, transformação digital e iniciativas de impacto. Viveu mais de dez anos em cada um de três continentes, fala quatro idiomas e já esteve em mais de 40 países.</p><p className="mt-5 text-lg leading-8 text-[#647679]">Fundador da <strong className="text-[#173f46]">InnoVenture, MissioPreneur e Tapestry Global</strong>, Dr. Dan combina experiência executiva com formação acadêmica para traduzir grandes mudanças em decisões práticas para empreendedores.</p><div className="mt-9 grid grid-cols-2 gap-y-7 border-y border-[#dbe2df] py-7 sm:grid-cols-4"><div><strong className="block text-3xl tracking-[-.04em]">30+</strong><span className="mt-1 block text-xs text-[#6a7e81]">anos de experiência</span></div><div><strong className="block text-3xl tracking-[-.04em]">40+</strong><span className="mt-1 block text-xs text-[#6a7e81]">países visitados</span></div><div><strong className="block text-3xl tracking-[-.04em]">4</strong><span className="mt-1 block text-xs text-[#6a7e81]">idiomas</span></div><div><strong className="block text-3xl tracking-[-.04em]">3</strong><span className="mt-1 block text-xs text-[#6a7e81]">continentes vividos</span></div></div><div className="mt-7 grid gap-3 sm:grid-cols-2"><div className="flex gap-3"><GraduationCap className="mt-1 size-5 shrink-0 text-[#a66d2d]"/><p className="text-sm leading-6 text-[#607579]">D.Min., MBA e doutorado profissional em Liderança e Gestão Global em andamento na Thunderbird/ASU.</p></div><div className="flex gap-3"><Globe2 className="mt-1 size-5 shrink-0 text-[#a66d2d]"/><p className="text-sm leading-6 text-[#607579]">Experiência em mercados globais, desenvolvimento organizacional e internacionalização.</p></div></div></div>
+      </div>
+    </section>
 
-      <section id="inteligencia" className="border-y border-white/10 bg-[#050a12] px-5 py-20 sm:px-10"><div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-10 lg:flex-row"><div className="max-w-2xl"><span className="flex items-center gap-2 text-sm font-semibold text-violet-300"><Zap className="size-4" /> A inteligência cresce com cada novo membro</span><h2 className="mt-4 text-3xl font-semibold sm:text-5xl">Você não entra apenas em uma lista. Você ajuda a construir o mapa empresarial do Brasil.</h2></div><Button nativeButton={false} render={<a href="#cadastro" />} className="h-14 shrink-0 rounded-xl bg-violet-400 px-7 text-base text-white hover:bg-violet-300">Cadastrar meu negócio <ArrowRight /></Button></div></section>
+    <ImpactCases />
 
-      <PlatformSections />
-    </main>
-  );
+    <MissionEngine />
+
+    <AiEraShowcase />
+
+    <FutureIntelligence />
+
+    <section id="como-funciona" className="bg-white px-5 py-24 sm:px-10 lg:px-16"><div className="mx-auto max-w-[1312px]"><div className="grid gap-12 lg:grid-cols-[.68fr_1.32fr]"><div><span className="text-xs font-bold uppercase tracking-[.22em] text-[#9a6427]">Do acesso ao impacto</span><h2 className="mt-5 text-4xl font-medium tracking-[-.04em] sm:text-5xl">Hoje não é o fim de um encontro. É o início de um movimento.</h2><Button nativeButton={false} render={<a href="#cadastro" />} className="mt-8 h-13 rounded-full bg-[#123b43] px-7 text-base text-white hover:bg-[#0a2c32]">Juntar-me ao movimento <ArrowRight /></Button></div><div className="divide-y divide-[#dfe4e1]">{[['01','Acesso','Você entra na rede e apresenta seu negócio, seu chamado e seu desafio atual.'],['02','Aprendizado','Conhecimento aplicável aproxima você da nova economia, da IA e de novas possibilidades.'],['03','Conexão','O ecossistema aproxima pessoas, especialistas, parceiros e oportunidades com contexto.'],['04','Aplicação','Visão se transforma em experimento, execução e mudança concreta dentro do negócio.'],['05','Impacto','Resultados alcançam pessoas, fortalecem comunidades e abrem novas jornadas.']].map(([n,t,c])=><article key={n} className="grid gap-4 py-6 sm:grid-cols-[60px_1fr] sm:gap-7"><span className="text-sm font-bold text-[#a66d2d]">{n}</span><div><h3 className="text-xl font-semibold">{t}</h3><p className="mt-2 leading-7 text-[#687a7d]">{c}</p></div></article>)}</div></div></div></section>
+
+    <section id="para-quem" className="bg-[#143f46] px-5 py-20 text-white sm:px-10 lg:px-16"><div className="mx-auto grid max-w-[1312px] gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-center"><div><span className="text-xs font-bold uppercase tracking-[.22em] text-[#f0bc75]">Para quem é</span><h2 className="mt-5 text-4xl font-medium leading-tight tracking-[-.04em] sm:text-5xl">Para quem lidera e decidiu não ficar parado.</h2></div><div className="grid gap-3 sm:grid-cols-2">{['Empreendedores e fundadores','Pequenas e médias empresas','Líderes e gestores','Negócios em transformação digital','Empresas que buscam parceiros','Profissionais dispostos a oferecer valor'].map(item=><div key={item} className="flex items-center gap-3 rounded-xl border border-white/12 bg-white/[.04] p-4"><CheckCircle2 className="size-5 text-[#f0bc75]"/><span>{item}</span></div>)}</div></div></section>
+
+    <PlatformSections />
+
+    <section id="faq" className="bg-[#f2f0e9] px-5 py-24 sm:px-10 lg:px-16"><div className="mx-auto grid max-w-[1100px] gap-12 lg:grid-cols-[.6fr_1.4fr]"><div><span className="text-xs font-bold uppercase tracking-[.22em] text-[#9a6427]">Perguntas frequentes</span><h2 className="mt-5 text-4xl font-medium tracking-[-.04em]">Antes de entrar, saiba o essencial.</h2></div><Accordion className="border-y border-[#cfd6d2]">{faqs.map(([q,a],i)=><AccordionItem key={q} value={`faq-${i}`}><AccordionTrigger className="py-5 text-base no-underline hover:no-underline">{q}</AccordionTrigger><AccordionContent className="pb-6 pr-10 text-base leading-7 text-[#647679]">{a}</AccordionContent></AccordionItem>)}</Accordion></div></section>
+
+    <footer className="bg-[#07161c] px-5 py-12 text-white sm:px-10 lg:px-16"><div className="mx-auto flex max-w-[1312px] flex-col justify-between gap-6 sm:flex-row sm:items-center"><div className="flex items-center gap-3"><span className="grid size-11 place-items-center rounded-xl border border-[#42d6ff]/20 bg-[#0a202a]"><img src="/brand-mark.svg" alt="" aria-hidden="true" className="brand-mark size-7" /></span><div><strong className="block text-sm tracking-[.12em]">EMPREENDEDORES DO REINO</strong><span className="text-xs text-white/40">Negócios. Tecnologia. Propósito. Impacto.</span></div></div><p className="max-w-md text-sm leading-6 text-white/45">Uma rede nacional para empresários que querem construir o futuro sem caminhar sozinhos.</p></div></footer>
+
+    <ConversionRail />
+  </main>;
 }

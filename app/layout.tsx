@@ -8,17 +8,18 @@ const lora = Lora({ variable: '--font-lora', subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://empreendedores-do-reino-brasil.gustavo-marques-lope.chatgpt.site'),
   title: 'Empreendedores do Reino',
-  description: 'Conecte seu negócio ao futuro com IA. Faça parte de uma rede nacional de empresários, oportunidades e transformação.',
+  description: 'Inteligência para negócios que movem o Brasil. Uma rede viva de dados, IA e conexões humanas.',
+  icons: { icon: '/favicon.svg' },
   openGraph: {
     title: 'Empreendedores do Reino',
-    description: 'Conecte seu negócio ao futuro com IA.',
+    description: 'Inteligência para negócios que movem o Brasil.',
     type: 'website',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Empreendedores do Reino — Conecte seu negócio ao futuro com IA.' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Empreendedores do Reino — Inteligência para negócios que movem o Brasil.' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Empreendedores do Reino',
-    description: 'Conecte seu negócio ao futuro com IA.',
+    description: 'Inteligência para negócios que movem o Brasil.',
     images: ['/og.png'],
   },
 };
