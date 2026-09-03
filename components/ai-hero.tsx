@@ -27,8 +27,8 @@ export function AiHero() {
 
       <header className="relative z-30 mx-auto flex max-w-[1440px] items-center justify-between px-5 py-6 sm:px-10 lg:px-16">
         <a href="#inicio" className="flex items-center gap-3" aria-label="Empreendedores do Reino — início">
-          <span className="grid h-11 w-[74px] place-items-center overflow-hidden rounded-xl border border-white/20 bg-white p-1 shadow-[0_0_32px_rgba(245,184,91,.13)] sm:h-12 sm:w-24">
-            <img src="/brand-logo-symbol.png" alt="" aria-hidden="true" className="h-full w-full object-contain" />
+          <span className="grid h-11 w-[74px] place-items-center sm:h-12 sm:w-24">
+            <img src="/brand-logo-symbol.png" alt="" aria-hidden="true" className="h-full w-full object-contain drop-shadow-[0_0_12px_rgba(255,255,255,.18)]" />
           </span>
           <span>
             <strong className="block text-sm tracking-[.13em]">EMPREENDEDORES</strong>
