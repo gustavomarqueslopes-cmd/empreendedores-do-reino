@@ -3,20 +3,41 @@ import { getDb } from '@/db';
 import { entrepreneurs } from '@/db/schema';
 import { ensureDatabase } from '@/db/setup';
 
-export async function GET() {
+const GITHUB_PAGES_ORIGIN = 'https://gustavomarqueslopes-cmd.github.io';
+
+function corsHeaders(request: Request) {
+  const origin = request.headers.get('origin');
+  return origin === GITHUB_PAGES_ORIGIN
+    ? { 'Access-Control-Allow-Origin': origin, Vary: 'Origin' }
+    : {};
+}
+
+export async function OPTIONS(request: Request) {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      ...corsHeaders(request),
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Max-Age': '86400',
+    },
+  });
+}
+
+export async function GET(request: Request) {
   await ensureDatabase();
   const db = getDb();
   const [total] = await db.select({ count: sql<number>`count(*)` }).from(entrepreneurs);
   const byState = await db.select({ name: entrepreneurs.state, value: sql<number>`count(*)` }).from(entrepreneurs).groupBy(entrepreneurs.state).orderBy(desc(sql`count(*)`)).limit(8);
   const bySegment = await db.select({ name: entrepreneurs.segment, value: sql<number>`count(*)` }).from(entrepreneurs).groupBy(entrepreneurs.segment).orderBy(desc(sql`count(*)`)).limit(8);
-  return Response.json({ total: total?.count ?? 0, byState, bySegment });
+  return Response.json({ total: total?.count ?? 0, byState, bySegment }, { headers: corsHeaders(request) });
 }
 
 export async function POST(request: Request) {
   await ensureDatabase();
   const data = await request.json() as Record<string, string>;
   const required = ['name','email','phone','city','state','company','role','segment','companySize','businessModel','challenge','aiMaturity','seeks','offers'];
-  if (required.some((key) => !data[key]?.trim())) return Response.json({ error: 'Preencha todos os campos obrigatórios.' }, { status: 400 });
+  if (required.some((key) => !data[key]?.trim())) return Response.json({ error: 'Preencha todos os campos obrigatórios.' }, { status: 400, headers: corsHeaders(request) });
   try {
     await getDb().insert(entrepreneurs).values({
       name: data.name.trim(), email: data.email.trim().toLowerCase(), phone: data.phone.trim(), city: data.city.trim(), state: data.state,
@@ -24,9 +45,9 @@ export async function POST(request: Request) {
       challenge: data.challenge, aiMaturity: data.aiMaturity, seeks: data.seeks, offers: data.offers.trim(), website: data.website?.trim() || null,
       createdAt: new Date().toISOString(),
     });
-    return Response.json({ ok: true }, { status: 201 });
+    return Response.json({ ok: true }, { status: 201, headers: corsHeaders(request) });
   } catch (error) {
-    if (String(error).toLowerCase().includes('unique')) return Response.json({ error: 'Este e-mail já faz parte da rede.' }, { status: 409 });
-    return Response.json({ error: 'Não foi possível concluir o cadastro.' }, { status: 500 });
+    if (String(error).toLowerCase().includes('unique')) return Response.json({ error: 'Este e-mail já faz parte da rede.' }, { status: 409, headers: corsHeaders(request) });
+    return Response.json({ error: 'Não foi possível concluir o cadastro.' }, { status: 500, headers: corsHeaders(request) });
   }
 }

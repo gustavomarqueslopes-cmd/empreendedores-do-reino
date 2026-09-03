@@ -1,0 +1,1 @@
+import{i as e}from"./useRenderElement-D7Ptxzop.js";var t=`none`,n=`trigger-press`;function r(t,n,r,i){let a=!1,o=!1,s=i??e;return{reason:t,event:n??new Event(`base-ui`),cancel(){a=!0},allowPropagation(){o=!0},get isCanceled(){return a},get isPropagationAllowed(){return o},trigger:r,...s}}export{t as n,n as r,r as t};

@@ -1,0 +1,1 @@
+function e(){return!0}function t(e){var t;return(e==null||(t=e.ownerDocument)==null?void 0:t.defaultView)||window}function n(n){return e()?n instanceof Element||n instanceof t(n).Element:!1}function r(n){return e()?n instanceof HTMLElement||n instanceof t(n).HTMLElement:!1}function i(e){return e?.ownerDocument||document}export{r as i,t as n,n as r,i as t};

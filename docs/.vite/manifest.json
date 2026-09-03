@@ -1,0 +1,427 @@
+{
+  "_AccordionRootContext-F0YI1yqS.js": {
+    "file": "_next/static/chunks/AccordionRootContext-F0YI1yqS.js",
+    "name": "AccordionRootContext",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_Button-IxFKUOtv.js": {
+    "file": "_next/static/chunks/Button-IxFKUOtv.js",
+    "name": "Button",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useButton-sGX-h__j.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_CollapsibleRootContext-8Gopt9aG.js": {
+    "file": "_next/static/chunks/CollapsibleRootContext-8Gopt9aG.js",
+    "name": "CollapsibleRootContext",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_CompositeListContext-CDvgCnBu.js": {
+    "file": "_next/static/chunks/CompositeListContext-CDvgCnBu.js",
+    "name": "CompositeListContext",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_Icon-D0zGVybZ.js": {
+    "file": "_next/static/chunks/Icon-D0zGVybZ.js",
+    "name": "Icon",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_arrow-right-DECXrT2P.js": {
+    "file": "_next/static/chunks/arrow-right-DECXrT2P.js",
+    "name": "arrow-right",
+    "imports": [
+      "_createLucideIcon-BrNKFXBt.js"
+    ]
+  },
+  "_bot-C3bc4xtY.js": {
+    "file": "_next/static/chunks/bot-C3bc4xtY.js",
+    "name": "bot",
+    "imports": [
+      "_createLucideIcon-BrNKFXBt.js"
+    ]
+  },
+  "_building-2-C7EgqCP8.js": {
+    "file": "_next/static/chunks/building-2-C7EgqCP8.js",
+    "name": "building-2",
+    "imports": [
+      "_createLucideIcon-BrNKFXBt.js"
+    ]
+  },
+  "_button-BFsCjXJb.js": {
+    "file": "_next/static/chunks/button-BFsCjXJb.js",
+    "name": "button",
+    "imports": [
+      "_Button-IxFKUOtv.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_check-CogASLIi.js": {
+    "file": "_next/static/chunks/check-CogASLIi.js",
+    "name": "check",
+    "imports": [
+      "_createLucideIcon-BrNKFXBt.js"
+    ]
+  },
+  "_collapsibleOpenStateMapping-DC5_3NmT.js": {
+    "file": "_next/static/chunks/collapsibleOpenStateMapping-DC5_3NmT.js",
+    "name": "collapsibleOpenStateMapping",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_createBaseUIEventDetails-Yy3CM4m6.js": {
+    "file": "_next/static/chunks/createBaseUIEventDetails-Yy3CM4m6.js",
+    "name": "createBaseUIEventDetails",
+    "imports": [
+      "_useRenderElement-D7Ptxzop.js"
+    ]
+  },
+  "_createLucideIcon-BrNKFXBt.js": {
+    "file": "_next/static/chunks/createLucideIcon-BrNKFXBt.js",
+    "name": "createLucideIcon",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_Icon-D0zGVybZ.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_earth-4dEMWaqJ.js": {
+    "file": "_next/static/chunks/earth-4dEMWaqJ.js",
+    "name": "earth",
+    "imports": [
+      "_createLucideIcon-BrNKFXBt.js"
+    ]
+  },
+  "_framework-D_rUT4EX.js": {
+    "file": "_next/static/chunks/framework-D_rUT4EX.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js"
+    ]
+  },
+  "_network-DvArcEKI.js": {
+    "file": "_next/static/chunks/network-DvArcEKI.js",
+    "name": "network",
+    "imports": [
+      "_createLucideIcon-BrNKFXBt.js"
+    ]
+  },
+  "_owner-QWuRl1LR.js": {
+    "file": "_next/static/chunks/owner-QWuRl1LR.js",
+    "name": "owner"
+  },
+  "_rolldown-runtime-C60lm6uB.js": {
+    "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+    "name": "rolldown-runtime"
+  },
+  "_shield-check-DY2-56CD.js": {
+    "file": "_next/static/chunks/shield-check-DY2-56CD.js",
+    "name": "shield-check",
+    "imports": [
+      "_createLucideIcon-BrNKFXBt.js"
+    ]
+  },
+  "_stateAttributesMapping-CkGBlyfx.js": {
+    "file": "_next/static/chunks/stateAttributesMapping-CkGBlyfx.js",
+    "name": "stateAttributesMapping",
+    "imports": [
+      "_collapsibleOpenStateMapping-DC5_3NmT.js"
+    ]
+  },
+  "_useAnimationFrame-4W1y5HwA.js": {
+    "file": "_next/static/chunks/useAnimationFrame-4W1y5HwA.js",
+    "name": "useAnimationFrame",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_useBaseUiId-D2yrHmom.js": {
+    "file": "_next/static/chunks/useBaseUiId-D2yrHmom.js",
+    "name": "useBaseUiId",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_useButton-sGX-h__j.js": {
+    "file": "_next/static/chunks/useButton-sGX-h__j.js",
+    "name": "useButton",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_owner-QWuRl1LR.js",
+      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_useControlled-D1ftOuQo.js": {
+    "file": "_next/static/chunks/useControlled-D1ftOuQo.js",
+    "name": "useControlled",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_useIsoLayoutEffect-DOod0xSL.js": {
+    "file": "_next/static/chunks/useIsoLayoutEffect-DOod0xSL.js",
+    "name": "useIsoLayoutEffect",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_useRenderElement-D7Ptxzop.js": {
+    "file": "_next/static/chunks/useRenderElement-D7Ptxzop.js",
+    "name": "useRenderElement",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/ai-hero.tsx": {
+    "file": "_next/static/chunks/ai-hero-mCTO0Ezf.js",
+    "name": "ai-hero",
+    "src": "components/ai-hero.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_button-BFsCjXJb.js",
+      "_createLucideIcon-BrNKFXBt.js",
+      "_arrow-right-DECXrT2P.js",
+      "_bot-C3bc4xtY.js",
+      "_check-CogASLIi.js",
+      "_earth-4dEMWaqJ.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/future-intelligence.tsx": {
+    "file": "_next/static/chunks/future-intelligence-CrGfk7Kn.js",
+    "name": "future-intelligence",
+    "src": "components/future-intelligence.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_createLucideIcon-BrNKFXBt.js",
+      "_bot-C3bc4xtY.js",
+      "_building-2-C7EgqCP8.js",
+      "_check-CogASLIi.js",
+      "_network-DvArcEKI.js",
+      "_shield-check-DY2-56CD.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/impact-cases.tsx": {
+    "file": "_next/static/chunks/impact-cases-CD5_73V6.js",
+    "name": "impact-cases",
+    "src": "components/impact-cases.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_createLucideIcon-BrNKFXBt.js",
+      "_arrow-right-DECXrT2P.js",
+      "_building-2-C7EgqCP8.js",
+      "_earth-4dEMWaqJ.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/mission-engine.tsx": {
+    "file": "_next/static/chunks/mission-engine-DSGS_he3.js",
+    "name": "mission-engine",
+    "src": "components/mission-engine.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_createLucideIcon-BrNKFXBt.js",
+      "_arrow-right-DECXrT2P.js",
+      "_building-2-C7EgqCP8.js",
+      "_network-DvArcEKI.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "components/platform-sections.tsx": {
+    "file": "_next/static/chunks/platform-sections-ClEsugZJ.js",
+    "name": "platform-sections",
+    "src": "components/platform-sections.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_button-BFsCjXJb.js",
+      "_createBaseUIEventDetails-Yy3CM4m6.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_useBaseUiId-D2yrHmom.js",
+      "_owner-QWuRl1LR.js",
+      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_useControlled-D1ftOuQo.js",
+      "_createLucideIcon-BrNKFXBt.js",
+      "_arrow-right-DECXrT2P.js",
+      "_check-CogASLIi.js",
+      "_network-DvArcEKI.js",
+      "_shield-check-DY2-56CD.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/@base-ui/react/accordion/header/AccordionHeader.mjs": {
+    "file": "_next/static/chunks/AccordionHeader-CXT8W6zh.js",
+    "name": "AccordionHeader",
+    "src": "node_modules/@base-ui/react/accordion/header/AccordionHeader.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_collapsibleOpenStateMapping-DC5_3NmT.js",
+      "_stateAttributesMapping-CkGBlyfx.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/@base-ui/react/accordion/item/AccordionItem.mjs": {
+    "file": "_next/static/chunks/AccordionItem-DzK-_321.js",
+    "name": "AccordionItem",
+    "src": "node_modules/@base-ui/react/accordion/item/AccordionItem.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_collapsibleOpenStateMapping-DC5_3NmT.js",
+      "_stateAttributesMapping-CkGBlyfx.js",
+      "_AccordionRootContext-F0YI1yqS.js",
+      "_CollapsibleRootContext-8Gopt9aG.js",
+      "_CompositeListContext-CDvgCnBu.js",
+      "_createBaseUIEventDetails-Yy3CM4m6.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_useBaseUiId-D2yrHmom.js",
+      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_useAnimationFrame-4W1y5HwA.js",
+      "_useControlled-D1ftOuQo.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/@base-ui/react/accordion/panel/AccordionPanel.mjs": {
+    "file": "_next/static/chunks/AccordionPanel-D9CYcUBk.js",
+    "name": "AccordionPanel",
+    "src": "node_modules/@base-ui/react/accordion/panel/AccordionPanel.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_collapsibleOpenStateMapping-DC5_3NmT.js",
+      "_stateAttributesMapping-CkGBlyfx.js",
+      "_AccordionRootContext-F0YI1yqS.js",
+      "_CollapsibleRootContext-8Gopt9aG.js",
+      "_createBaseUIEventDetails-Yy3CM4m6.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_owner-QWuRl1LR.js",
+      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_useAnimationFrame-4W1y5HwA.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/@base-ui/react/accordion/root/AccordionRoot.mjs": {
+    "file": "_next/static/chunks/AccordionRoot-BV0eLe5N.js",
+    "name": "AccordionRoot",
+    "src": "node_modules/@base-ui/react/accordion/root/AccordionRoot.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_AccordionRootContext-F0YI1yqS.js",
+      "_CompositeListContext-CDvgCnBu.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_useControlled-D1ftOuQo.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/@base-ui/react/accordion/trigger/AccordionTrigger.mjs": {
+    "file": "_next/static/chunks/AccordionTrigger-DZzShPCa.js",
+    "name": "AccordionTrigger",
+    "src": "node_modules/@base-ui/react/accordion/trigger/AccordionTrigger.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_collapsibleOpenStateMapping-DC5_3NmT.js",
+      "_CollapsibleRootContext-8Gopt9aG.js",
+      "_useButton-sGX-h__j.js",
+      "_useRenderElement-D7Ptxzop.js",
+      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
+    "file": "_next/static/chunks/app-route-prefetch-policy-BNDvqDRG.js",
+    "name": "app-route-prefetch-policy",
+    "src": "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "virtual:vinext-app-browser-entry"
+    ]
+  },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "_next/static/chunks/layout-segment-context-X_3mrayA.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "node_modules/vinext/dist/shims/streamed-icons.js": {
+    "file": "_next/static/chunks/streamed-icons-DxFpn0IK.js",
+    "name": "streamed-icons",
+    "src": "node_modules/vinext/dist/shims/streamed-icons.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "_next/static/chunks/index-RKruAp6e.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ],
+    "dynamicImports": [
+      "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
+      "components/impact-cases.tsx",
+      "node_modules/@base-ui/react/accordion/root/AccordionRoot.mjs",
+      "virtual:vinext-app-browser-entry",
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
+      "node_modules/@base-ui/react/accordion/trigger/AccordionTrigger.mjs",
+      "components/platform-sections.tsx",
+      "_Icon-D0zGVybZ.js",
+      "components/mission-engine.tsx",
+      "_Button-IxFKUOtv.js",
+      "components/ai-hero.tsx",
+      "node_modules/@base-ui/react/accordion/item/AccordionItem.mjs",
+      "node_modules/vinext/dist/shims/streamed-icons.js",
+      "components/future-intelligence.tsx",
+      "node_modules/@base-ui/react/accordion/header/AccordionHeader.mjs",
+      "node_modules/@base-ui/react/accordion/panel/AccordionPanel.mjs"
+    ]
+  }
+}

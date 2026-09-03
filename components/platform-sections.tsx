@@ -37,7 +37,10 @@ export function PlatformSections() {
     if(missing){setStepError('Revise os campos obrigatórios antes de concluir.');return;}
     setStatus('loading');setMessage('');
     try {
-      const response=await fetch('/api/entrepreneurs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+      const apiUrl=typeof window!=='undefined'&&window.location.hostname.endsWith('.github.io')
+        ? 'https://empreendedores-do-reino-brasil.gustavo-marques-lope.chatgpt.site/api/entrepreneurs'
+        : '/api/entrepreneurs';
+      const response=await fetch(apiUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
       const body=await response.json();
       if(response.ok){setStatus('success');setData(initial);setStepError('');}
       else{setStatus('error');setMessage(body.error||'Não foi possível concluir.');}
