@@ -5,6 +5,7 @@ import { ImpactCases } from '@/components/impact-cases';
 import { MissionEngine } from '@/components/mission-engine';
 import { PlatformSections } from '@/components/platform-sections';
 import { AiEraShowcase } from '@/components/ai-era-showcase';
+import { OpenAiBusinessRadar } from '@/components/openai-business-radar';
 import { ConversionRail } from '@/components/conversion-rail';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -50,6 +51,8 @@ export default function Home() {
     <MissionEngine />
 
     <AiEraShowcase />
+
+    <OpenAiBusinessRadar />
 
     <FutureIntelligence />
 
