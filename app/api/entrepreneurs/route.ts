@@ -66,6 +66,8 @@ export async function POST(request: Request) {
     'businessModel',
     'challenge',
     'aiMaturity',
+    'serves',
+    'humanProblem',
     'seeks',
     'offers',
   ];
@@ -92,6 +94,8 @@ export async function POST(request: Request) {
         businessModel: data.businessModel,
         challenge: data.challenge,
         aiMaturity: data.aiMaturity,
+        serves: data.serves.trim(),
+        humanProblem: data.humanProblem.trim(),
         seeks: data.seeks,
         offers: data.offers.trim(),
         website: data.website?.trim() || null,

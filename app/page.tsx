@@ -4,6 +4,7 @@ import { ImpactCases } from '@/components/impact-cases';
 import { MissionEngine } from '@/components/mission-engine';
 import { PlatformSections } from '@/components/platform-sections';
 import { ConversionRail } from '@/components/conversion-rail';
+import { PurposePaths } from '@/components/purpose-paths';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,
@@ -103,6 +104,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <PurposePaths />
 
       <section
         id="dr-dan"
@@ -328,6 +331,27 @@ export default function Home() {
               </AccordionItem>
             ))}
           </Accordion>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden bg-[#0b2633] px-5 py-20 text-white sm:px-10 lg:px-16">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,rgba(99,217,230,.16),transparent_30%)]" />
+        <div className="relative mx-auto flex max-w-[1312px] flex-col justify-between gap-8 lg:flex-row lg:items-center">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[.22em] text-[#efbd78]">
+              O início de um movimento
+            </p>
+            <h2 className="mt-4 max-w-4xl text-4xl font-medium leading-tight tracking-[-.045em] sm:text-6xl">
+              Aprenda. Conecte-se. Construa. Lidere. Impacte.
+            </h2>
+          </div>
+          <Button
+            nativeButton={false}
+            render={<a href="#cadastro" />}
+            className="h-14 shrink-0 rounded-full bg-[#f5b85b] px-8 text-base font-bold text-[#111820] hover:bg-[#ffd187]"
+          >
+            Entrar no movimento <ArrowRight />
+          </Button>
         </div>
       </section>
 

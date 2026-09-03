@@ -18,6 +18,8 @@ export const entrepreneurs = sqliteTable(
     businessModel: text('business_model').notNull(),
     challenge: text('challenge').notNull(),
     aiMaturity: text('ai_maturity').notNull(),
+    serves: text('serves'),
+    humanProblem: text('human_problem'),
     seeks: text('seeks').notNull(),
     offers: text('offers').notNull(),
     website: text('website'),

@@ -21,6 +21,8 @@ export async function ensureDatabase() {
       business_model TEXT NOT NULL,
       challenge TEXT NOT NULL,
       ai_maturity TEXT NOT NULL,
+      serves TEXT,
+      human_problem TEXT,
       seeks TEXT NOT NULL,
       offers TEXT NOT NULL,
       website TEXT,
@@ -55,6 +57,16 @@ export async function ensureDatabase() {
       env.DB.prepare(
         'ALTER TABLE entrepreneurs ADD COLUMN years_in_business TEXT',
       ),
+    );
+  }
+  if (!columns.has('serves')) {
+    additions.push(
+      env.DB.prepare('ALTER TABLE entrepreneurs ADD COLUMN serves TEXT'),
+    );
+  }
+  if (!columns.has('human_problem')) {
+    additions.push(
+      env.DB.prepare('ALTER TABLE entrepreneurs ADD COLUMN human_problem TEXT'),
     );
   }
   if (additions.length) await env.DB.batch(additions);

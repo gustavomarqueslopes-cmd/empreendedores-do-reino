@@ -87,6 +87,8 @@ const initial = {
   website: '',
   challenge: '',
   aiMaturity: '',
+  serves: '',
+  humanProblem: '',
   seeks: '',
   offers: '',
 };
@@ -97,6 +99,7 @@ const stepLabels = [
   'Você e seus contatos',
   'Identidade do negócio',
   'Momento e desafios',
+  'Propósito e impacto',
   'Conexões de valor',
 ];
 
@@ -104,6 +107,7 @@ const stepTitles = [
   'Quem é você?',
   'Conte sobre o seu negócio',
   'Qual é o momento da empresa?',
+  'Qual é o propósito que move seu negócio?',
   'Que conexão faria diferença agora?',
 ];
 
@@ -118,7 +122,8 @@ const requiredByStep: Record<number, (keyof FormData)[]> = {
     'challenge',
     'aiMaturity',
   ],
-  4: ['seeks', 'offers'],
+  4: ['serves', 'humanProblem'],
+  5: ['seeks', 'offers'],
 };
 
 const fieldLabels: Record<keyof FormData, string> = {
@@ -137,6 +142,8 @@ const fieldLabels: Record<keyof FormData, string> = {
   website: 'site ou rede social',
   challenge: 'maior desafio',
   aiMaturity: 'uso de inteligência artificial',
+  serves: 'quem você foi chamado a servir',
+  humanProblem: 'problema humano que seu negócio resolve',
   seeks: 'o que procura na rede',
   offers: 'o que pode oferecer à rede',
 };
@@ -335,7 +342,7 @@ export function PlatformSections() {
             <div className="flex items-center justify-between gap-4">
               <p className="text-sm text-white/50">Seu progresso</p>
               <span className="rounded-full bg-[#efb667]/10 px-3 py-1 text-xs font-semibold text-[#efb667]">
-                17 respostas
+                19 respostas
               </span>
             </div>
             <div className="mt-6 space-y-5">
@@ -617,6 +624,49 @@ export function PlatformSections() {
                 ) : null}
 
                 {step === 4 ? (
+                  <div className="grid gap-5">
+                    <div className="rounded-2xl border border-[#dfd4c1] bg-[#f5efe4] p-5">
+                      <p className="text-xs font-bold uppercase tracking-[.18em] text-[#9b682b]">
+                        A pergunta central
+                      </p>
+                      <p className="mt-2 text-xl font-semibold leading-7 text-[#173b42]">
+                        Que problema você foi chamado para resolver?
+                      </p>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="serves">
+                        Quem você foi chamado a servir?
+                      </Label>
+                      <Textarea
+                        id="serves"
+                        value={data.serves}
+                        onChange={(event) =>
+                          change('serves', event.target.value)
+                        }
+                        placeholder="Descreva as pessoas, empresas ou comunidades que você deseja alcançar..."
+                        required
+                        className="min-h-28"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="humanProblem">
+                        Que problema humano seu negócio resolve?
+                      </Label>
+                      <Textarea
+                        id="humanProblem"
+                        value={data.humanProblem}
+                        onChange={(event) =>
+                          change('humanProblem', event.target.value)
+                        }
+                        placeholder="Explique o problema real que existe antes do seu produto ou serviço..."
+                        required
+                        className="min-h-28"
+                      />
+                    </div>
+                  </div>
+                ) : null}
+
+                {step === 5 ? (
                   <div className="grid gap-5">
                     <SelectField
                       label="O que você procura nesta rede?"
