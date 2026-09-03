@@ -16,6 +16,8 @@ export async function ensureDatabase() {
       role TEXT NOT NULL,
       segment TEXT NOT NULL,
       company_size TEXT NOT NULL,
+      employee_count TEXT,
+      years_in_business TEXT,
       business_model TEXT NOT NULL,
       challenge TEXT NOT NULL,
       ai_maturity TEXT NOT NULL,
@@ -24,9 +26,38 @@ export async function ensureDatabase() {
       website TEXT,
       created_at TEXT NOT NULL
     )`),
-    env.DB.prepare('CREATE INDEX IF NOT EXISTS idx_entrepreneurs_state ON entrepreneurs(state)'),
-    env.DB.prepare('CREATE INDEX IF NOT EXISTS idx_entrepreneurs_segment ON entrepreneurs(segment)'),
-    env.DB.prepare('CREATE INDEX IF NOT EXISTS idx_entrepreneurs_created_at ON entrepreneurs(created_at)'),
+    env.DB.prepare(
+      'CREATE INDEX IF NOT EXISTS idx_entrepreneurs_state ON entrepreneurs(state)',
+    ),
+    env.DB.prepare(
+      'CREATE INDEX IF NOT EXISTS idx_entrepreneurs_segment ON entrepreneurs(segment)',
+    ),
+    env.DB.prepare(
+      'CREATE INDEX IF NOT EXISTS idx_entrepreneurs_created_at ON entrepreneurs(created_at)',
+    ),
   ]);
+
+  const tableInfo = await env.DB.prepare(
+    'PRAGMA table_info(entrepreneurs)',
+  ).all<{ name: string }>();
+  const columns = new Set(tableInfo.results.map((column) => column.name));
+  const additions = [];
+
+  if (!columns.has('employee_count')) {
+    additions.push(
+      env.DB.prepare(
+        'ALTER TABLE entrepreneurs ADD COLUMN employee_count TEXT',
+      ),
+    );
+  }
+  if (!columns.has('years_in_business')) {
+    additions.push(
+      env.DB.prepare(
+        'ALTER TABLE entrepreneurs ADD COLUMN years_in_business TEXT',
+      ),
+    );
+  }
+  if (additions.length) await env.DB.batch(additions);
+
   ready = true;
 }
