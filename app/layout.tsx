@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://empreendedores-do-reino-brasil.gustavo-marques-lope.chatgpt.site'),
   title: 'Empreendedores do Reino',
   description: 'Inteligência para negócios que movem o Brasil. Uma rede viva de dados, IA e conexões humanas.',
-  icons: { icon: '/favicon.svg' },
+  icons: { icon: '/brand-logo-symbol.png' },
   openGraph: {
     title: 'Empreendedores do Reino',
     description: 'Inteligência para negócios que movem o Brasil.',
