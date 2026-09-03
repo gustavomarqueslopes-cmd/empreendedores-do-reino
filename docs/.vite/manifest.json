@@ -1,34 +1,34 @@
 {
-  "_AccordionRootContext-F0YI1yqS.js": {
-    "file": "_next/static/chunks/AccordionRootContext-F0YI1yqS.js",
+  "_AccordionRootContext-Bzlm0K_F.js": {
+    "file": "_next/static/chunks/AccordionRootContext-Bzlm0K_F.js",
     "name": "AccordionRootContext",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_useRenderElement-D7Ptxzop.js",
+      "_useRenderElement-CWWyj17x.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_Button-IxFKUOtv.js": {
-    "file": "_next/static/chunks/Button-IxFKUOtv.js",
+  "_Button-duE0n7wE.js": {
+    "file": "_next/static/chunks/Button-duE0n7wE.js",
     "name": "Button",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_useButton-sGX-h__j.js",
-      "_useRenderElement-D7Ptxzop.js",
+      "_useButton-C_UE9ZpS.js",
+      "_useRenderElement-CWWyj17x.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_CollapsibleRootContext-8Gopt9aG.js": {
-    "file": "_next/static/chunks/CollapsibleRootContext-8Gopt9aG.js",
+  "_CollapsibleRootContext-qaAFJpgD.js": {
+    "file": "_next/static/chunks/CollapsibleRootContext-qaAFJpgD.js",
     "name": "CollapsibleRootContext",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_useRenderElement-D7Ptxzop.js",
+      "_useRenderElement-CWWyj17x.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_CompositeListContext-CDvgCnBu.js": {
-    "file": "_next/static/chunks/CompositeListContext-CDvgCnBu.js",
+  "_CompositeListContext-DRYUSOCs.js": {
+    "file": "_next/static/chunks/CompositeListContext-DRYUSOCs.js",
     "name": "CompositeListContext",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
@@ -43,72 +43,52 @@
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_arrow-right-DECXrT2P.js": {
-    "file": "_next/static/chunks/arrow-right-DECXrT2P.js",
+  "_arrow-right-BzmX52Dx.js": {
+    "file": "_next/static/chunks/arrow-right-BzmX52Dx.js",
     "name": "arrow-right",
-    "imports": [
-      "_createLucideIcon-BrNKFXBt.js"
-    ]
-  },
-  "_bot-C3bc4xtY.js": {
-    "file": "_next/static/chunks/bot-C3bc4xtY.js",
-    "name": "bot",
-    "imports": [
-      "_createLucideIcon-BrNKFXBt.js"
-    ]
-  },
-  "_building-2-C7EgqCP8.js": {
-    "file": "_next/static/chunks/building-2-C7EgqCP8.js",
-    "name": "building-2",
-    "imports": [
-      "_createLucideIcon-BrNKFXBt.js"
-    ]
-  },
-  "_button-BFsCjXJb.js": {
-    "file": "_next/static/chunks/button-BFsCjXJb.js",
-    "name": "button",
-    "imports": [
-      "_Button-IxFKUOtv.js",
-      "_framework-D_rUT4EX.js"
-    ]
-  },
-  "_check-CogASLIi.js": {
-    "file": "_next/static/chunks/check-CogASLIi.js",
-    "name": "check",
-    "imports": [
-      "_createLucideIcon-BrNKFXBt.js"
-    ]
-  },
-  "_collapsibleOpenStateMapping-DC5_3NmT.js": {
-    "file": "_next/static/chunks/collapsibleOpenStateMapping-DC5_3NmT.js",
-    "name": "collapsibleOpenStateMapping",
-    "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
-      "_useRenderElement-D7Ptxzop.js",
-      "_framework-D_rUT4EX.js"
-    ]
-  },
-  "_createBaseUIEventDetails-Yy3CM4m6.js": {
-    "file": "_next/static/chunks/createBaseUIEventDetails-Yy3CM4m6.js",
-    "name": "createBaseUIEventDetails",
-    "imports": [
-      "_useRenderElement-D7Ptxzop.js"
-    ]
-  },
-  "_createLucideIcon-BrNKFXBt.js": {
-    "file": "_next/static/chunks/createLucideIcon-BrNKFXBt.js",
-    "name": "createLucideIcon",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "_Icon-D0zGVybZ.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_earth-4dEMWaqJ.js": {
-    "file": "_next/static/chunks/earth-4dEMWaqJ.js",
+  "_building-2-DKja5uQb.js": {
+    "file": "_next/static/chunks/building-2-DKja5uQb.js",
+    "name": "building-2",
+    "imports": [
+      "_arrow-right-BzmX52Dx.js"
+    ]
+  },
+  "_button-CDhDY9Cq.js": {
+    "file": "_next/static/chunks/button-CDhDY9Cq.js",
+    "name": "button",
+    "imports": [
+      "_Button-duE0n7wE.js",
+      "_arrow-right-BzmX52Dx.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_collapsibleOpenStateMapping-CHN_LOkS.js": {
+    "file": "_next/static/chunks/collapsibleOpenStateMapping-CHN_LOkS.js",
+    "name": "collapsibleOpenStateMapping",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useRenderElement-CWWyj17x.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_createBaseUIEventDetails-DictKPzN.js": {
+    "file": "_next/static/chunks/createBaseUIEventDetails-DictKPzN.js",
+    "name": "createBaseUIEventDetails",
+    "imports": [
+      "_useRenderElement-CWWyj17x.js"
+    ]
+  },
+  "_earth-DVc3hyaQ.js": {
+    "file": "_next/static/chunks/earth-DVc3hyaQ.js",
     "name": "earth",
     "imports": [
-      "_createLucideIcon-BrNKFXBt.js"
+      "_arrow-right-BzmX52Dx.js"
     ]
   },
   "_framework-D_rUT4EX.js": {
@@ -118,83 +98,76 @@
       "_rolldown-runtime-C60lm6uB.js"
     ]
   },
-  "_network-DvArcEKI.js": {
-    "file": "_next/static/chunks/network-DvArcEKI.js",
+  "_network-DAymG18j.js": {
+    "file": "_next/static/chunks/network-DAymG18j.js",
     "name": "network",
     "imports": [
-      "_createLucideIcon-BrNKFXBt.js"
+      "_arrow-right-BzmX52Dx.js"
     ]
   },
-  "_owner-QWuRl1LR.js": {
-    "file": "_next/static/chunks/owner-QWuRl1LR.js",
+  "_owner-DQa8-4fs.js": {
+    "file": "_next/static/chunks/owner-DQa8-4fs.js",
     "name": "owner"
   },
   "_rolldown-runtime-C60lm6uB.js": {
     "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
     "name": "rolldown-runtime"
   },
-  "_shield-check-DY2-56CD.js": {
-    "file": "_next/static/chunks/shield-check-DY2-56CD.js",
-    "name": "shield-check",
-    "imports": [
-      "_createLucideIcon-BrNKFXBt.js"
-    ]
-  },
-  "_stateAttributesMapping-CkGBlyfx.js": {
-    "file": "_next/static/chunks/stateAttributesMapping-CkGBlyfx.js",
+  "_stateAttributesMapping-7TyFY0bG.js": {
+    "file": "_next/static/chunks/stateAttributesMapping-7TyFY0bG.js",
     "name": "stateAttributesMapping",
     "imports": [
-      "_collapsibleOpenStateMapping-DC5_3NmT.js"
+      "_collapsibleOpenStateMapping-CHN_LOkS.js"
     ]
   },
-  "_useAnimationFrame-4W1y5HwA.js": {
-    "file": "_next/static/chunks/useAnimationFrame-4W1y5HwA.js",
+  "_useAnimationFrame-DeIGewAx.js": {
+    "file": "_next/static/chunks/useAnimationFrame-DeIGewAx.js",
     "name": "useAnimationFrame",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_useRenderElement-D7Ptxzop.js",
+      "_useRenderElement-CWWyj17x.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_useBaseUiId-D2yrHmom.js": {
-    "file": "_next/static/chunks/useBaseUiId-D2yrHmom.js",
+  "_useBaseUiId-D5g_SPAN.js": {
+    "file": "_next/static/chunks/useBaseUiId-D5g_SPAN.js",
     "name": "useBaseUiId",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_useIsoLayoutEffect-Bgk3MQYx.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_useButton-sGX-h__j.js": {
-    "file": "_next/static/chunks/useButton-sGX-h__j.js",
+  "_useButton-C_UE9ZpS.js": {
+    "file": "_next/static/chunks/useButton-C_UE9ZpS.js",
     "name": "useButton",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_useRenderElement-D7Ptxzop.js",
-      "_owner-QWuRl1LR.js",
-      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_useRenderElement-CWWyj17x.js",
+      "_owner-DQa8-4fs.js",
+      "_useIsoLayoutEffect-Bgk3MQYx.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_useControlled-D1ftOuQo.js": {
-    "file": "_next/static/chunks/useControlled-D1ftOuQo.js",
+  "_useControlled-CJ-GSC9A.js": {
+    "file": "_next/static/chunks/useControlled-CJ-GSC9A.js",
     "name": "useControlled",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_useIsoLayoutEffect-DOod0xSL.js": {
-    "file": "_next/static/chunks/useIsoLayoutEffect-DOod0xSL.js",
+  "_useIsoLayoutEffect-Bgk3MQYx.js": {
+    "file": "_next/static/chunks/useIsoLayoutEffect-Bgk3MQYx.js",
     "name": "useIsoLayoutEffect",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_useRenderElement-D7Ptxzop.js",
+      "_useRenderElement-CWWyj17x.js",
       "_framework-D_rUT4EX.js"
     ]
   },
-  "_useRenderElement-D7Ptxzop.js": {
-    "file": "_next/static/chunks/useRenderElement-D7Ptxzop.js",
+  "_useRenderElement-CWWyj17x.js": {
+    "file": "_next/static/chunks/useRenderElement-CWWyj17x.js",
     "name": "useRenderElement",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
@@ -202,172 +175,148 @@
     ]
   },
   "components/ai-hero.tsx": {
-    "file": "_next/static/chunks/ai-hero-Dfy4bKcM.js",
+    "file": "_next/static/chunks/ai-hero-D4SQyj-n.js",
     "name": "ai-hero",
     "src": "components/ai-hero.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_button-BFsCjXJb.js",
-      "_createLucideIcon-BrNKFXBt.js",
-      "_arrow-right-DECXrT2P.js",
-      "_bot-C3bc4xtY.js",
-      "_check-CogASLIi.js",
-      "_earth-4dEMWaqJ.js",
-      "_framework-D_rUT4EX.js"
-    ]
-  },
-  "components/future-intelligence.tsx": {
-    "file": "_next/static/chunks/future-intelligence-CrGfk7Kn.js",
-    "name": "future-intelligence",
-    "src": "components/future-intelligence.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "_rolldown-runtime-C60lm6uB.js",
-      "_createLucideIcon-BrNKFXBt.js",
-      "_bot-C3bc4xtY.js",
-      "_building-2-C7EgqCP8.js",
-      "_check-CogASLIi.js",
-      "_network-DvArcEKI.js",
-      "_shield-check-DY2-56CD.js",
+      "_button-CDhDY9Cq.js",
+      "_arrow-right-BzmX52Dx.js",
+      "_earth-DVc3hyaQ.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "components/impact-cases.tsx": {
-    "file": "_next/static/chunks/impact-cases-CD5_73V6.js",
+    "file": "_next/static/chunks/impact-cases-IIWYDS-d.js",
     "name": "impact-cases",
     "src": "components/impact-cases.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_createLucideIcon-BrNKFXBt.js",
-      "_arrow-right-DECXrT2P.js",
-      "_building-2-C7EgqCP8.js",
-      "_earth-4dEMWaqJ.js",
+      "_arrow-right-BzmX52Dx.js",
+      "_building-2-DKja5uQb.js",
+      "_earth-DVc3hyaQ.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "components/mission-engine.tsx": {
-    "file": "_next/static/chunks/mission-engine-DSGS_he3.js",
+    "file": "_next/static/chunks/mission-engine-Cm0gDRIz.js",
     "name": "mission-engine",
     "src": "components/mission-engine.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_createLucideIcon-BrNKFXBt.js",
-      "_arrow-right-DECXrT2P.js",
-      "_building-2-C7EgqCP8.js",
-      "_network-DvArcEKI.js",
+      "_arrow-right-BzmX52Dx.js",
+      "_building-2-DKja5uQb.js",
+      "_network-DAymG18j.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "components/platform-sections.tsx": {
-    "file": "_next/static/chunks/platform-sections-B6O0Mr0w.js",
+    "file": "_next/static/chunks/platform-sections-C8qWnukF.js",
     "name": "platform-sections",
     "src": "components/platform-sections.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_button-BFsCjXJb.js",
-      "_createBaseUIEventDetails-Yy3CM4m6.js",
-      "_useRenderElement-D7Ptxzop.js",
-      "_useBaseUiId-D2yrHmom.js",
-      "_owner-QWuRl1LR.js",
-      "_useIsoLayoutEffect-DOod0xSL.js",
-      "_useControlled-D1ftOuQo.js",
-      "_createLucideIcon-BrNKFXBt.js",
-      "_arrow-right-DECXrT2P.js",
-      "_check-CogASLIi.js",
-      "_network-DvArcEKI.js",
-      "_shield-check-DY2-56CD.js",
+      "_button-CDhDY9Cq.js",
+      "_createBaseUIEventDetails-DictKPzN.js",
+      "_useRenderElement-CWWyj17x.js",
+      "_useBaseUiId-D5g_SPAN.js",
+      "_owner-DQa8-4fs.js",
+      "_useIsoLayoutEffect-Bgk3MQYx.js",
+      "_useControlled-CJ-GSC9A.js",
+      "_arrow-right-BzmX52Dx.js",
+      "_network-DAymG18j.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "node_modules/@base-ui/react/accordion/header/AccordionHeader.mjs": {
-    "file": "_next/static/chunks/AccordionHeader-CXT8W6zh.js",
+    "file": "_next/static/chunks/AccordionHeader-6-GB5qeB.js",
     "name": "AccordionHeader",
     "src": "node_modules/@base-ui/react/accordion/header/AccordionHeader.mjs",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_collapsibleOpenStateMapping-DC5_3NmT.js",
-      "_stateAttributesMapping-CkGBlyfx.js",
-      "_useRenderElement-D7Ptxzop.js",
+      "_collapsibleOpenStateMapping-CHN_LOkS.js",
+      "_stateAttributesMapping-7TyFY0bG.js",
+      "_useRenderElement-CWWyj17x.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "node_modules/@base-ui/react/accordion/item/AccordionItem.mjs": {
-    "file": "_next/static/chunks/AccordionItem-DzK-_321.js",
+    "file": "_next/static/chunks/AccordionItem-PklJMmKF.js",
     "name": "AccordionItem",
     "src": "node_modules/@base-ui/react/accordion/item/AccordionItem.mjs",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_collapsibleOpenStateMapping-DC5_3NmT.js",
-      "_stateAttributesMapping-CkGBlyfx.js",
-      "_AccordionRootContext-F0YI1yqS.js",
-      "_CollapsibleRootContext-8Gopt9aG.js",
-      "_CompositeListContext-CDvgCnBu.js",
-      "_createBaseUIEventDetails-Yy3CM4m6.js",
-      "_useRenderElement-D7Ptxzop.js",
-      "_useBaseUiId-D2yrHmom.js",
-      "_useIsoLayoutEffect-DOod0xSL.js",
-      "_useAnimationFrame-4W1y5HwA.js",
-      "_useControlled-D1ftOuQo.js",
+      "_collapsibleOpenStateMapping-CHN_LOkS.js",
+      "_stateAttributesMapping-7TyFY0bG.js",
+      "_AccordionRootContext-Bzlm0K_F.js",
+      "_CollapsibleRootContext-qaAFJpgD.js",
+      "_CompositeListContext-DRYUSOCs.js",
+      "_createBaseUIEventDetails-DictKPzN.js",
+      "_useRenderElement-CWWyj17x.js",
+      "_useBaseUiId-D5g_SPAN.js",
+      "_useIsoLayoutEffect-Bgk3MQYx.js",
+      "_useAnimationFrame-DeIGewAx.js",
+      "_useControlled-CJ-GSC9A.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "node_modules/@base-ui/react/accordion/panel/AccordionPanel.mjs": {
-    "file": "_next/static/chunks/AccordionPanel-D9CYcUBk.js",
+    "file": "_next/static/chunks/AccordionPanel-BkUlAAez.js",
     "name": "AccordionPanel",
     "src": "node_modules/@base-ui/react/accordion/panel/AccordionPanel.mjs",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_collapsibleOpenStateMapping-DC5_3NmT.js",
-      "_stateAttributesMapping-CkGBlyfx.js",
-      "_AccordionRootContext-F0YI1yqS.js",
-      "_CollapsibleRootContext-8Gopt9aG.js",
-      "_createBaseUIEventDetails-Yy3CM4m6.js",
-      "_useRenderElement-D7Ptxzop.js",
-      "_owner-QWuRl1LR.js",
-      "_useIsoLayoutEffect-DOod0xSL.js",
-      "_useAnimationFrame-4W1y5HwA.js",
+      "_collapsibleOpenStateMapping-CHN_LOkS.js",
+      "_stateAttributesMapping-7TyFY0bG.js",
+      "_AccordionRootContext-Bzlm0K_F.js",
+      "_CollapsibleRootContext-qaAFJpgD.js",
+      "_createBaseUIEventDetails-DictKPzN.js",
+      "_useRenderElement-CWWyj17x.js",
+      "_owner-DQa8-4fs.js",
+      "_useIsoLayoutEffect-Bgk3MQYx.js",
+      "_useAnimationFrame-DeIGewAx.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "node_modules/@base-ui/react/accordion/root/AccordionRoot.mjs": {
-    "file": "_next/static/chunks/AccordionRoot-BV0eLe5N.js",
+    "file": "_next/static/chunks/AccordionRoot-Cfki9Odn.js",
     "name": "AccordionRoot",
     "src": "node_modules/@base-ui/react/accordion/root/AccordionRoot.mjs",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_AccordionRootContext-F0YI1yqS.js",
-      "_CompositeListContext-CDvgCnBu.js",
-      "_useRenderElement-D7Ptxzop.js",
-      "_useIsoLayoutEffect-DOod0xSL.js",
-      "_useControlled-D1ftOuQo.js",
+      "_AccordionRootContext-Bzlm0K_F.js",
+      "_CompositeListContext-DRYUSOCs.js",
+      "_useRenderElement-CWWyj17x.js",
+      "_useIsoLayoutEffect-Bgk3MQYx.js",
+      "_useControlled-CJ-GSC9A.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "node_modules/@base-ui/react/accordion/trigger/AccordionTrigger.mjs": {
-    "file": "_next/static/chunks/AccordionTrigger-DZzShPCa.js",
+    "file": "_next/static/chunks/AccordionTrigger-DKClioFa.js",
     "name": "AccordionTrigger",
     "src": "node_modules/@base-ui/react/accordion/trigger/AccordionTrigger.mjs",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
-      "_collapsibleOpenStateMapping-DC5_3NmT.js",
-      "_CollapsibleRootContext-8Gopt9aG.js",
-      "_useButton-sGX-h__j.js",
-      "_useRenderElement-D7Ptxzop.js",
-      "_useIsoLayoutEffect-DOod0xSL.js",
+      "_collapsibleOpenStateMapping-CHN_LOkS.js",
+      "_CollapsibleRootContext-qaAFJpgD.js",
+      "_useButton-C_UE9ZpS.js",
+      "_useRenderElement-CWWyj17x.js",
+      "_useIsoLayoutEffect-Bgk3MQYx.js",
       "_framework-D_rUT4EX.js"
     ]
   },
   "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "_next/static/chunks/app-route-prefetch-policy-BYDwXbxj.js",
+    "file": "_next/static/chunks/app-route-prefetch-policy-BWxH7JgI.js",
     "name": "app-route-prefetch-policy",
     "src": "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -376,7 +325,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "_next/static/chunks/layout-segment-context-D9vW3jyM.js",
+    "file": "_next/static/chunks/layout-segment-context-BAzGwRC9.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -387,7 +336,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/streamed-icons.js": {
-    "file": "_next/static/chunks/streamed-icons-DxFpn0IK.js",
+    "file": "_next/static/chunks/streamed-icons-DApaOl3Y.js",
     "name": "streamed-icons",
     "src": "node_modules/vinext/dist/shims/streamed-icons.js",
     "isDynamicEntry": true,
@@ -397,7 +346,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "_next/static/chunks/index-CKP8n7pl.js",
+    "file": "_next/static/chunks/index-DJEXBTmT.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -415,11 +364,10 @@
       "components/platform-sections.tsx",
       "_Icon-D0zGVybZ.js",
       "components/mission-engine.tsx",
-      "_Button-IxFKUOtv.js",
+      "_Button-duE0n7wE.js",
       "components/ai-hero.tsx",
       "node_modules/@base-ui/react/accordion/item/AccordionItem.mjs",
       "node_modules/vinext/dist/shims/streamed-icons.js",
-      "components/future-intelligence.tsx",
       "node_modules/@base-ui/react/accordion/header/AccordionHeader.mjs",
       "node_modules/@base-ui/react/accordion/panel/AccordionPanel.mjs"
     ]

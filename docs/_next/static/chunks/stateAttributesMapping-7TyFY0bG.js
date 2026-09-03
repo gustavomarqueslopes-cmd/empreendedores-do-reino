@@ -1,0 +1,1 @@
+import{o as e,t}from"./collapsibleOpenStateMapping-CHN_LOkS.js";var n=function(e){return e.index=`data-index`,e.disabled=`data-disabled`,e.open=`data-open`,e}({}),r={...t,index:e=>({[n.index]:String(e)}),...e,value:()=>null};export{r as t};
