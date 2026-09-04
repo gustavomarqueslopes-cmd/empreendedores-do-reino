@@ -44,7 +44,7 @@ export function PurposePaths() {
           <div className="lg:pb-2">
             <p className="text-xl leading-8 text-[#566f73]">
               A Rede Empreendedores do Reino é a plataforma brasileira que
-              transforma a visão do Movimento MissioEmpreendedor em entrada,
+              transforma a visão do movimento Missio Empreendedor em entrada,
               diagnóstico e conexões de valor.
             </p>
             <p className="mt-5 border-l-2 border-[#d09a52] pl-5 text-base leading-7 text-[#657b7e]">

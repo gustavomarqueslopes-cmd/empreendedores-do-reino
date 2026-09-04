@@ -1,4 +1,12 @@
-import { ArrowRight, CheckCircle2, Globe2, GraduationCap } from 'lucide-react';
+import {
+  ArrowRight,
+  CheckCircle2,
+  Cross,
+  Globe2,
+  GraduationCap,
+  HeartHandshake,
+  Sprout,
+} from 'lucide-react';
 import { AiHero } from '@/components/ai-hero';
 import { ImpactCases } from '@/components/impact-cases';
 import { MissionEngine } from '@/components/mission-engine';
@@ -16,15 +24,15 @@ import {
 const faqs = [
   [
     'O que é a Rede Empreendedores do Reino?',
-    'É um ecossistema nacional de empreendedores cristãos criado para conectar propósito, formação, tecnologia, oportunidades e pessoas capazes de gerar impacto.',
+    'É a plataforma brasileira conectada à visão do movimento Missio Empreendedor: um ecossistema de líderes cristãos que une propósito, inovação, expansão e conexões empresariais para gerar impacto.',
   ],
   [
     'Preciso pagar para me cadastrar?',
     'Não. O cadastro inicial é gratuito e serve para mapear seu perfil, entender suas necessidades e organizar as primeiras conexões da rede.',
   ],
   [
-    'Preciso já utilizar inteligência artificial?',
-    'Não. A rede atende desde quem ainda não sabe por onde começar até empresas que já usam automações e IA em seus processos ou produtos.',
+    'Esta é uma rede somente sobre inteligência artificial?',
+    'Não. A inteligência artificial é uma das ferramentas. A rede é sobre propósito, inovação, expansão de mercados, conexões empresariais e impacto — usando tecnologia quando ela ajuda a cumprir a missão.',
   ],
   [
     'O que acontece depois do cadastro?',
@@ -36,6 +44,24 @@ const faqs = [
   ],
 ];
 
+const manifestoPillars = [
+  {
+    icon: Sprout,
+    title: 'Transformar realidades',
+    text: 'Criar soluções que enfrentam problemas humanos e deixam comunidades mais fortes.',
+  },
+  {
+    icon: HeartHandshake,
+    title: 'Servir com excelência',
+    text: 'Colocar talento, empresa e recursos a serviço das pessoas e do bem comum.',
+  },
+  {
+    icon: Cross,
+    title: 'Levar esperança',
+    text: 'Testemunhar os valores do Reino e a mensagem de salvação em cada esfera da sociedade.',
+  },
+] as const;
+
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#f2f0e9] pb-20 text-[#132e35] sm:pb-24">
@@ -44,10 +70,10 @@ export default function Home() {
       <section className="relative z-20 -mt-1 bg-white px-5 py-7 sm:px-10 lg:px-16">
         <div className="mx-auto grid max-w-[1312px] gap-px overflow-hidden rounded-2xl border border-[#d8e4e6] bg-[#d8e4e6] sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ['01', 'Entenda seu momento'],
-            ['02', 'Aprenda a usar IA'],
-            ['03', 'Encontre conexões'],
-            ['04', 'Transforme em execução'],
+            ['01', 'Defina seu propósito'],
+            ['02', 'Inove com estratégia'],
+            ['03', 'Expanda por conexões'],
+            ['04', 'Transforme em impacto'],
           ].map(([n, t]) => (
             <div key={n} className="bg-[#f8fbfc] p-5">
               <span className="text-xs font-bold text-[#0c809a]">{n}</span>
@@ -61,23 +87,23 @@ export default function Home() {
         <div className="mx-auto grid max-w-[1312px] gap-14 lg:grid-cols-[.86fr_1.14fr] lg:items-center">
           <div>
             <span className="text-xs font-bold uppercase tracking-[.22em] text-[#9a6427]">
-              O que é este movimento
+              Da visão Missio Empreendedor
             </span>
             <h2 className="mt-5 text-4xl font-medium leading-[1.02] tracking-[-.045em] sm:text-6xl">
-              Propósito que vira negócio. Negócios que transformam cidades.
+              Negócios com propósito. Líderes enviados para transformar.
             </h2>
             <div className="mt-8 space-y-5 text-lg leading-8 text-[#5b6e72]">
               <p>
                 A Rede Empreendedores do Reino nasce conectada à visão do
-                MissioEmpreendedor: líderes cristãos chamados a resolver
-                problemas humanos reais, construir negócios sustentáveis e gerar
-                impacto mensurável.
+                movimento Missio Empreendedor: líderes cristãos chamados a
+                resolver problemas humanos reais, construir negócios
+                sustentáveis e gerar impacto mensurável.
               </p>
               <p>
-                Ela aproxima empreendedores, universidades, igrejas,
-                investidores, tecnologia, governo, comunidades, mentores e
-                mercados — porque nenhuma transformação relevante acontece de
-                forma isolada.
+                Ela conecta inovação, formação, expansão de mercados e relações
+                empresariais com empreendedores, universidades, igrejas,
+                investidores, governo, comunidades e mentores — porque nenhuma
+                transformação relevante acontece de forma isolada.
               </p>
             </div>
             <div className="mt-9 border-l-2 border-[#d29a55] pl-6">
@@ -124,7 +150,7 @@ export default function Home() {
                 Pesquisa atual
               </span>
               <p className="mt-2 text-lg leading-7">
-                Empreendedorismo de impacto na era da inteligência artificial.
+                Empreendedorismo de impacto, inovação e expansão global.
               </p>
             </div>
           </div>
@@ -209,6 +235,42 @@ export default function Home() {
       <MissionEngine />
 
       <section
+        id="manifesto"
+        className="relative overflow-hidden bg-[#071722] px-5 py-24 text-white sm:px-10 lg:px-16 lg:py-32"
+      >
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,rgba(239,189,120,.16),transparent_28%),radial-gradient(circle_at_84%_70%,rgba(99,217,230,.14),transparent_30%)]" />
+        <div className="relative mx-auto max-w-[1312px]">
+          <div className="grid gap-12 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
+            <div>
+              <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[.22em] text-[#efbd78]">
+                <Cross className="size-4" /> Nossa vocação
+              </span>
+              <h2 className="mt-6 max-w-5xl text-[clamp(3.2rem,6.5vw,7rem)] font-medium leading-[.9] tracking-[-.065em]">
+                Agentes de transformação e salvação no mundo.
+              </h2>
+            </div>
+            <p className="border-l-2 border-[#63d9e6]/60 pl-6 text-xl leading-9 text-white/67">
+              Cremos que empresas podem ser instrumentos de serviço, dignidade,
+              reconciliação e esperança. Por meio do trabalho, da inovação e das
+              relações, líderes cristãos tornam visível o Reino e levam a
+              mensagem de salvação aos lugares onde decisões, recursos e futuros
+              são construídos.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-px overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 md:grid-cols-3">
+            {manifestoPillars.map(({ icon: Icon, title, text }) => (
+              <article key={title} className="bg-[#0a2230] p-7 sm:p-9">
+                <Icon className="size-6 text-[#63d9e6]" />
+                <h3 className="mt-8 text-2xl font-semibold">{title}</h3>
+                <p className="mt-3 leading-7 text-white/52">{text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
         id="como-funciona"
         className="bg-white px-5 py-24 sm:px-10 lg:px-16"
       >
@@ -239,7 +301,7 @@ export default function Home() {
                 [
                   '02',
                   'Aprendizado',
-                  'Conhecimento aplicável aproxima você da nova economia, da IA e de novas possibilidades.',
+                  'Conhecimento aplicável aproxima você de inovação, novos mercados, tecnologia e oportunidades de expansão.',
                 ],
                 [
                   '03',
@@ -364,14 +426,14 @@ export default function Home() {
               className="h-24 w-auto object-contain sm:h-28"
             />
             <span className="hidden max-w-[180px] text-xs leading-5 text-[#687c7e] lg:block">
-              Negócios. Tecnologia.
+              Propósito. Inovação.
               <br />
-              Propósito. Impacto.
+              Conexões. Expansão. Impacto.
             </span>
           </div>
           <p className="max-w-md text-sm leading-6 text-[#5c7174]">
-            Uma rede nacional para empresários que querem construir o futuro sem
-            caminhar sozinhos.
+            Uma rede do movimento Missio Empreendedor para líderes que querem
+            transformar o mundo sem caminhar sozinhos.
           </p>
         </div>
       </footer>

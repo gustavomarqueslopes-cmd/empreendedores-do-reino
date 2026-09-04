@@ -141,7 +141,7 @@ const fieldLabels: Record<keyof FormData, string> = {
   businessModel: 'modelo de negócio',
   website: 'site ou rede social',
   challenge: 'maior desafio',
-  aiMaturity: 'uso de inteligência artificial',
+  aiMaturity: 'maturidade de inovação e tecnologia',
   serves: 'quem você foi chamado a servir',
   humanProblem: 'problema humano que seu negócio resolve',
   seeks: 'o que procura na rede',
@@ -608,15 +608,15 @@ export function PlatformSections() {
                       onChange={change}
                     />
                     <SelectField
-                      label="Como sua empresa utiliza inteligência artificial hoje?"
+                      label="Qual é o nível de inovação e adoção tecnológica da sua empresa?"
                       name="aiMaturity"
                       value={data.aiMaturity}
                       options={[
-                        'Ainda não utiliza',
-                        'Uso individual em tarefas pontuais',
-                        'Já possui algumas automações',
-                        'IA integrada aos processos',
-                        'IA faz parte do modelo de negócio',
+                        'Ainda não há iniciativas estruturadas',
+                        'Testamos novas ferramentas pontualmente',
+                        'Já temos automações ou projetos de inovação',
+                        'Tecnologia e IA integradas aos processos',
+                        'Inovação faz parte do modelo de negócio',
                       ]}
                       onChange={change}
                     />

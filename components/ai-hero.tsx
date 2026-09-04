@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Bot, Check, Globe2, Orbit, Radio } from 'lucide-react';
+import { ArrowRight, Check, Globe2, Network, Orbit, Radio } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { InteractiveGlobe } from '@/components/interactive-globe';
 
@@ -94,9 +94,9 @@ export function AiHero() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-white/76 sm:text-xl">
-            Uma rede nacional para empreendedores cristãos que querem dominar a
-            inteligência artificial, construir conexões globais e transformar
-            propósito em execução.
+            Uma rede nacional do movimento Missio Empreendedor para líderes
+            cristãos que querem inovar, expandir mercados, construir conexões
+            empresariais e transformar propósito em impacto.
           </p>
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -132,24 +132,24 @@ export function AiHero() {
         <div className="flex items-start justify-between gap-4">
           <div className="flex gap-3">
             <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-[#42d6ff]/12">
-              <Bot className="size-5 text-[#7ce6ff]" />
+              <Network className="size-5 text-[#7ce6ff]" />
             </span>
             <div>
               <p className="text-xs font-bold uppercase tracking-[.16em] text-[#7ce6ff]">
-                Nova era dos agentes
+                Missio Empreendedor
               </p>
               <p className="mt-1 text-sm leading-6 text-white/68">
-                Da conversa para a execução: agentes já pesquisam, decidem e
-                operam fluxos.
+                Propósito, inovação, expansão e conexões para transformar o
+                mundo dos negócios.
               </p>
             </div>
           </div>
           <Radio className="size-4 shrink-0 text-[#f5b85b]" />
         </div>
         <div className="mt-4 grid grid-cols-3 gap-2 border-t border-white/10 pt-4 text-center text-[10px] uppercase tracking-[.1em] text-white/45">
-          <span>Humano decide</span>
-          <span>IA amplia</span>
-          <span>Rede acelera</span>
+          <span>Propósito guia</span>
+          <span>Inovação amplia</span>
+          <span>Conexões aceleram</span>
         </div>
       </div>
 
@@ -158,11 +158,11 @@ export function AiHero() {
           {[0, 1].map((group) => (
             <div key={group} className="flex items-center gap-10">
               <span className="text-[#f5b85b]">Propósito</span>
-              <span>Empreendedorismo</span>
-              <span className="text-[#63d9e6]">Agentes de IA</span>
-              <span>Robótica</span>
-              <span>Internacionalização</span>
-              <span>Ecossistemas</span>
+              <span>Inovação</span>
+              <span className="text-[#63d9e6]">Conexões empresariais</span>
+              <span>Expansão de mercados</span>
+              <span>Tecnologia e IA</span>
+              <span>Missão</span>
               <span className="text-[#79d4a7]">Impacto</span>
               <Globe2 className="size-4" />
               <Orbit className="size-4" />
